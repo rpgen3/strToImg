@@ -1,4 +1,4 @@
-function imgToStr(img){
+function imgToStr(img){ // <img>
     var width = img.width,
         height = img.height;
     var cv = $("<canvas>").attr({
