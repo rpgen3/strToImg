@@ -27,5 +27,5 @@ function strToImg(str){
         imgData.data[i4 + 3] = 255; // 透過を指定するとputImageDataで画素値が変わる現象がある
     }
     ctx.putImageData(imgData, 0, 0);
-    return cv[0].toDataURL("image/png");
+    return cv[0].toDataURL("image/png").replace(/^[^,]+;base64,/, '');
 }
