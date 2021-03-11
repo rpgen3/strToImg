@@ -49,7 +49,7 @@
         img.onload = function(){
             rpgen3.addInputText(h_result2.empty(),{
                 title: "output",
-                value: imgToStr(img),
+                value: "data:image/png;base64," + imgToStr(img),
                 textarea: true,
                 readonly: true,
                 hankaku: false
