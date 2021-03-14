@@ -35,7 +35,7 @@
             src: result
         });
     }
-    var inputFile = $("<input>").appendTo(h2).attr({
+    $("<input>").appendTo(h2).attr({
         type: "file"
     }).on("change",loadImg);
     var h_result2 = $("<div>").appendTo(h2);
