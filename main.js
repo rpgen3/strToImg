@@ -35,11 +35,9 @@
             src: result
         });
     }
-    $("<button>").appendTo(h2).text("画像選択").on("click",function(){
-        $("<input>").attr({
-            type: "file"
-        }).on("change",loadImg).get(0).click();
-    });
+    var inputFile = $("<input>").appendTo(h2).attr({
+        type: "file"
+    }).on("change",loadImg);
     var h_result2 = $("<div>").appendTo(h2);
     function loadImg(e){
         var file = e.target.files[0];
