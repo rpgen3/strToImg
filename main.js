@@ -24,7 +24,7 @@
         hankaku: false
     });
     function main(){
-        var result = "data:image/png;base64," + strToImg(inputStr());
+        var result = strToImg(inputStr());
         $("<button>",{text:"ダウンロード"}).appendTo(h_result.empty()).on("click",function(){
             var a = $("<a>",{
                 href: result,
