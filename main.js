@@ -24,7 +24,7 @@
         hankaku: false
     });
     function main(){
-        var result = strToImg(inputStr());
+        var result = rpgen3.strToImg(inputStr());
         $("<button>",{text:"ダウンロード"}).appendTo(h_result.empty()).on("click",function(){
             var a = $("<a>",{
                 href: result,
@@ -47,7 +47,7 @@
         img.onload = function(){
             rpgen3.addInputText(h_result2.empty(),{
                 title: "output",
-                value: imgToStr(img),
+                value: rpgen3.imgToStr(img),
                 textarea: true,
                 readonly: true,
                 hankaku: false
